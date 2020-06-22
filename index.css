@@ -28,11 +28,81 @@ body{
     font-size:1.6rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
+    background-color: #F0F0F0; 
 }
 
-/*HEADER STYLES */
+/*HEADER STYLES*/
 
+#logo{
+    height: 15vh;
+    width: auto; 
+    padding: 10px;
+}
 
+.headerbar{
+    display: flex;
+}
+
+.headerbar nav{
+    display: flex;
+    align-items: center;
+    font-size: 4vh;
+    margin: 2vh; 
+}
+
+.headerbar nav a{
+    color: black;
+    text-decoration: none;
+    padding: 2vh; 
+    transition: ease .2s;
+}
+
+.headerbar nav a:hover{
+    transform: scale(1.25);
+
+}
+
+/*CONTAINER STYLES*/
+
+.content-row{
+    display:flex;
+    align-items: center;
+}
+
+.content-row div img{
+    width: 50%; 
+    height: auto;
+}
+
+.potluckpic{
+    width: 100%;
+
+}
+
+/*FOOTER STYLES*/
+
+.footerbar{
+    display: flex;
+}
+
+.footerbar nav{
+    display: flex;
+    align-items: center;
+    font-size: 4vh;
+    margin: 2vh; 
+}
+
+.footerbar nav a{
+    color: black;
+    text-decoration: none;
+    padding: 2vh; 
+    transition: ease .2s;
+}
+
+.footerbar nav a:hover{
+    transform: scale(1.25);
+
+}
 /*Media Queries - Mobile*/
 @media(max-width:500px){
   
