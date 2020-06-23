@@ -184,18 +184,46 @@ h3{
     flex-direction: column;    
     width: 50%;
     margin: auto;
-    margin-top: -10vh;
+    margin-top: -11vh;
 }
 .aboutbox div{
     display: flex;
     flex-direction: column;
-    padding: 4%;
+    padding: 5%;
     font-size: 3em;
     color:rgb(255, 196, 1);
     text-align: center;
     justify-content: center;
     background-color: rgba(61, 61, 61, 0.856);
 }
+
+.biocontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+.bioitem{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.biotext{
+    justify-content: center;
+    text-align: center;
+}
+
+.biopic img{
+    height: 30vh;
+    width: auto;
+    padding: 2%;
+    justify-content: center;
+    align-self: center;
+}
+
+
 /*FOOTER STYLES*/
 
 footer{
@@ -236,5 +264,9 @@ footer{
 /* Media Queries - Mobile */
 
 @media(max-width:500px){
-  
+  .headerbar nav, .footerbar nav{
+      flex-direction: column;
+      font-size: 3vh;
+      padding: 0;
+  }
 }
