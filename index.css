@@ -39,6 +39,10 @@ body{
     padding: 10px;
 }
 
+header{
+    background-image: linear-gradient(to bottom right, #f0f0f0, #f0f0f0, grey);
+}
+
 .headerbar{
     display: flex;
 }
@@ -67,39 +71,76 @@ header h2{
 
 }
 
+.headerbar nav h2{
+    font-size: 5.5vh;
+    margin-right: 4vh;
+}
+
 #PotluckPic{
     object-fit: cover;
     width: 100%;
-    height: 50vh;
+    height: 65vh;
+    border-bottom: 20px solid black;
+}
+
+#PotLuckPic:hover{
+
 }
 
 
 .getstarted{
     display: flex;
+    flex-direction: column;    
     width: 90%;
-    margin: 2%;
-
+    margin: auto;
+    margin-top: -23vh;
 }
 .getstarted div{
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5%;
+    padding-top: 2%;
     font-size: 2em;
+    color:whitesmoke;
     text-align: center;
-    background-color: rgb(121, 224, 219);
-
+    justify-content: center;
+    background-color: rgba(61, 61, 61, 0.856);
 }
 
-.getstarted div a{
-    border-style: solid;
-    border-color: black;
-    border-radius: 10%;
-    background-color: crimson;
-    padding: 2%;
+.getstarted .starttitle h2{
+    font-size: 3em;
+    color: rgb(255, 196, 1);
+}
+
+.getstarted .startdescription{
+    font-size: 2rem;
+    align-self: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.getstarted a{
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: rgb(255, 196, 1);
+    padding: 1%;
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
     margin: 1vh;
+    transition: ease .2s;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 4vh;
 }
 
-/*CONTAINER STYLES*/
+.getstarted a:hover{
+    color:  rgb(255, 196, 1);
+    background-color: rgb(70, 70, 70);
+    border: 2px solid rgb(255, 196, 1); 
+    transform: scale(1.125);
+}
+
+/*HOME CONTAINER STYLES*/
 
 h3{
     font-size: 2em;
@@ -107,27 +148,93 @@ h3{
 
 .middle-content{
     display: flex;
-
-    width: 90%;
-
+    flex-direction: column;
+    margin: 8vh;
 }
 
-.content-row{
-    /* display:flex; */
+.content-row1, .content-row2{
+    display:flex;
     align-items: center; 
     text-align: center; 
-    width: 90%; 
 }
 
-.content-row div img{
-    width: 50%; 
+
+.middle-content div img{
+    width: 70vh; 
     height: auto;
+    padding: 5vh;
 }
+
+.middle-content div img:hover{
+
+}
+
+/* ABOUT STYLES */
+
+#AboutPic{
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    border-bottom: 20px solid black;
+    object-position: 0 3%;
+}
+
+.aboutbox{
+    display: flex;
+    flex-direction: column;    
+    width: 50%;
+    margin: auto;
+    margin-top: -11vh;
+}
+.aboutbox div{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 3em;
+    color:rgb(255, 196, 1);
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(61, 61, 61, 0.856);
+}
+
+    /* Biography Section */
+.biocontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+.bioitem{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    padding: 2%;
+    margin: 1%;
+}
+
+.biotext{
+    justify-content: center;
+    text-align: center;
+}
+
+.biopic img{
+    height: 40vh;
+    width: auto;
+}
+
 
 /*FOOTER STYLES*/
 
+footer{
+    background-image: linear-gradient(to top left, #f0f0f0, #f0f0f0, grey);
+}
+
 .footerbar{
     display: flex;
+    flex-direction: row-reverse;
+    border-top: 4px solid black; 
+    margin-top: 4vh;
 }
 
 .footerbar nav{
@@ -146,9 +253,20 @@ h3{
 
 .footerbar nav a:hover{
     transform: scale(1.25);
+}
+
+/* Media Queries - Tablet */
+
+@media(max-width:800px){
 
 }
-/*Media Queries - Mobile*/
+
+/* Media Queries - Mobile */
+
 @media(max-width:500px){
-  
+  .headerbar nav, .footerbar nav{
+      flex-direction: column;
+      font-size: 3vh;
+      padding: 0;
+  }
 }
