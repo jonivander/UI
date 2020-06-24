@@ -12,7 +12,12 @@
         <section class="headerbar">
             <img id="logo" src="assets/lucky_pot_logo.jpg" alt="PotLucky Logo">
             <nav>
-                <h2>PotLucky</h2>
+                <div class="dropdown">
+                    <button class="dropbtn">PotLucky</button>
+                    <div class="dropdown-content">
+                        <a href="https://potluck-planner.potluck-planning.vercel.app/">Login</a>
+                    </div>
+                </div>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="#" onclick="window.open('https://potluck-planner.potluck-planning.vercel.app/register', 'yourWindowName', 'width=400 ,height=300');">Get Started</a>
@@ -39,31 +44,37 @@
 
     <section class="middle-content">
         <div class="content-row1">
-            <div>
-                <img id="create_event" src="assets/calendar_planner.jpeg" alt="Planning">
-            </div>
-            <div>
-                <h3>Create Your Event</h3>
-                <p>Easily plan your event, including date, time, location, guest list, and dish ideas.</p>
-            </div>
+            <div class="space"></div>
+                <div>
+                    <img id="create_event" src="assets/calendar_planner.jpeg" alt="Planning">
+                </div>
+                <div class="content-text">
+                    <h3>Create Your Event</h3>
+                    <p>Easily plan your event, including date, time, location, guest list, and dish ideas.</p>
+                </div>
+            <div class="space"></div>
         </div>
         <div class="content-row2">
-            <div>
-                <h3>Share Your Event</h3>
-                <p>Share your event details with your guests, where they can RSVP and sign up for the items they want to bring or suggest their own.</p>
-            </div>
-            <div>
-                <img id="guest_phone" src="assets/person_on_phone.jpeg" alt="Planning">
-            </div>
+            <div class="space"></div>
+                <div class="content-text">
+                    <h3>Share Your Event</h3>
+                    <p>Share your event details with your guests, where they can RSVP and sign up for the items they want to bring or suggest their own.</p>
+                </div>
+                <div>
+                    <img id="guest_phone" src="assets/person_on_phone.jpeg" alt="Planning">
+                </div>
+            <div class="space"></div>
         </div>
         <div class="content-row1">
-            <div>
-                <img id="gather_event" src="assets/charcuterie_group.jpeg" alt="Planning">
-            </div>
-            <div>
-                <h3>Gather 'Round</h3>
-                <p>No headache involved! When the day comes, just relax and enjoy your gathering knowing all the details are taken care of. Lucky you!</p>
-            </div>
+            <div class="space"></div>
+                <div>
+                    <img id="gather_event" src="assets/charcuterie_group.jpeg" alt="Planning">
+                </div>
+                <div class="content-text">
+                    <h3>Gather 'Round</h3>
+                    <p>No headache involved! When the day comes, just relax and enjoy your gathering knowing all the details are taken care of. Lucky you!</p>
+                </div>
+            <div class="space"></div>
         </div>
     </section>
     <footer>
