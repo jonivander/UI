@@ -102,7 +102,7 @@ header h2{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     text-align: center;
-  }
+  }  
   
   /* Links inside the dropdown */
 .dropdown-content a {
@@ -125,6 +125,9 @@ header h2{
       background-color: #3e8e41;
       color: rgb(255, 196, 1);
     }
+
+    
+    
 
 #PotluckPic{
     object-fit: cover;
@@ -223,7 +226,7 @@ h3{
 
 .content-text{
     /* border: 1px solid grey; */
-    background: rgba(255, 196, 1, 0.609);
+    background: rgba(255, 196, 1, 0.623);
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 10%;
